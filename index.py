@@ -38,4 +38,31 @@ def plural_form(number,form1,form2,form3):
                 correct_form = form3    
     else:
         correct_form = form3
-    return correct_form    
+    return correct_form   
+
+
+@html('body')
+@html('div', width=200, height=100)
+@html('a', href='https://yandex.ru/')
+def to_string(input_value):
+    return str(input_value)
+
+
+print(to_string('ссылка на яндекс'))     
+
+
+    
+start = int(input('Введите целое число - начало диапазона: '))
+finish = int(input('Введите целое число - конец диапазона: '))
+string = f'{start}-{finish}:'
+print(string, fizz_buzz(start,finish))   
+
+
+print(1, plural_form(1, 'яблоко', 'яблока', 'яблок'))
+print(3, plural_form(3, 'яблоко', 'яблока', 'яблок'))
+print(5, plural_form(5, 'яблоко', 'яблока', 'яблок'))
+print(11, plural_form(11, 'яблоко', 'яблока', 'яблок'))
+print(121, plural_form(121, 'яблоко', 'яблока', 'яблок'))
+print(125, plural_form(125, 'яблоко', 'яблока', 'яблок'))  
+
+
