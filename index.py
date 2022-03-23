@@ -52,10 +52,15 @@ print(to_string('ссылка на яндекс'))
 
 
     
-start = int(input('Введите целое число - начало диапазона: '))
-finish = int(input('Введите целое число - конец диапазона: '))
-string = f'{start}-{finish}:'
-print(string, fizz_buzz(start,finish))   
+#start = int(input('Введите целое число - начало диапазона: '))
+#finish = int(input('Введите целое число - конец диапазона: '))
+#string = f'{start}-{finish}:'
+#print(string, fizz_buzz(start,finish))   
+
+print('0-3:', fizz_buzz(0, 3))
+print('0-5:', fizz_buzz(0, 5))
+print('15-15:', fizz_buzz(15, 15))
+print('1000-20000:', fizz_buzz(1000, 20000))
 
 
 print(1, plural_form(1, 'яблоко', 'яблока', 'яблок'))
